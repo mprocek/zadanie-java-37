@@ -4,7 +4,7 @@ public class Person {
     private int age;
     private String pesel;
 
-    public Person(String firstName, String lastName, int age, String pesel) {
+    public Person(String firstName, String lastName, int age, String pesel) throws IncorectAgeException, NameUnderfinendException {
         if(!validationWord(firstName))
             throw new NameUnderfinendException();
         else
